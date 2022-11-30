@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-WORKDIR /usr/app
+WORKDIR /usr/todo-app
 
 EXPOSE 3001
 
