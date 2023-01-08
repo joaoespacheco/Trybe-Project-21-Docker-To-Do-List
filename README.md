@@ -17,6 +17,9 @@ Para o desenvolvimento do projeto foram utilizados os comandos CLI do docker, Do
 <details>
 <summary><strong>Desempenho</strong></summary>
 Aprovado com 100% de desempenho em todos os requisitos
+
+![image](https://user-images.githubusercontent.com/99846604/211217996-3a3c33b2-83e9-4ed0-95fe-be120f60ec89.png)
+
 </details>
 
 <details>
@@ -47,6 +50,53 @@ Docker-compose: </br>
 12. Suba uma orquestração em segundo plano com o docker-compose de forma que "backend", "frontend" e "tests" consigam se comunicar </br>
 </details>
 </br>
+
+## ⚙️ Execução
+
+Para executar a aplicação inicie realizando o clone deste repositório com o comando abaixo.
+
+    git clone git@github.com:joaoespacheco/Trybe-Project-21-Docker-To-Do-List.git
+    
+Navegue até o diretório **docker** do projeto.
+
+    cd docker-todo-list/docker
+
+<details>
+   <summary><strong>Rodando a aplicação com o Docker</strong></summary> 
+  </br>
+  
+  <strong>Obs:</strong> Para rodar a aplicação dessa forma você deve ter o [Docker](https://www.docker.com/) instalado na sua máquina.
+  
+  </br>
+  
+  Instale as depedências do projeto na pasta back-end, fornt-end e tests rodando o comando abaixo em cada pasta
+
+        npm install
+  
+  Na pasta docker do projeto, suba o container <strong>todofront</strong>, <strong>todoback</strong> e <strong>todotests</strong> utilizando o docker-compose.yml. 
+  
+Utilize o comando abaixo.
+
+        docker-compose up -d
+
+Entre no terminal do container de back-end com o comando:
+
+        docker exec -it docker-todoback-1 bin/sh
+
+Dentro do terminal, inicie o servidor
+
+        npm run dev
+        
+ Entre no terminal do container de front-end com o comando:
+    
+        docker exec -it docker-todofront-1 bin/sh
+        
+ Inicie a aplicação react com o comando abaixo dentro do terminal do container
+    
+        npm start
+
+</details>
+<br/>
 
 ## 🤹🏽 Habilidades Desenvolvidas:
 * Utilizar a CLI do Docker para executar comandos
