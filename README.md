@@ -95,6 +95,14 @@ Dentro do terminal, inicie o servidor
     
         npm start
 
+ Entre no terminal do container de tests com o comando:
+    
+        docker exec -it docker-todotests-1 bin/sh
+        
+ Inicie a execução dos testes com o comando:
+    
+        npm test
+
 </details>
 <br/>
 
