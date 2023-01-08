@@ -69,7 +69,7 @@ Navegue até o diretório **docker** do projeto.
   
   </br>
   
-  Instale as depedências do projeto na pasta back-end, fornt-end e tests rodando o comando abaixo em cada pasta
+  Instale as depedências do projeto na pasta back-end, fornt-end e tests rodando o comando abaixo dentro de cada pasta
 
         npm install
   
